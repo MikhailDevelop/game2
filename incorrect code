@@ -1,0 +1,52 @@
+  const spaceship = {
+             crewCount: 10, // passagers
+             fuel: 10, //petrol
+             travel: 0, //travel
+             spacestop:0,
+           }
+
+         function start() {
+           var fuel = spaceship.fuel;
+           console.log(fuel);
+
+           var travel = spaceship.travel;
+           console.log(travel);
+
+           var spacestop = spaceship.spacestop
+           console.log(spacestop);
+
+           if(spaceship.fuel === 10) {
+             for(spaceship.fuel = 10; spaceship.fuel >= 0; spaceship.fuel--) {
+                      travel++;
+                      console.error('travel: ' + travel);
+                      console.warn('fuel: ' + spaceship.fuel);
+                      console.log(spaceship);
+                      stop();
+                  }
+
+          function stop() {
+            if(spaceship.fuel === 0) {
+              console.error('default');
+              spacestop++;
+            }
+          }
+             function go() {
+                    if(spaceship.spacestop === 1) {
+                      fuel++;
+                      console.error('spacestop:' + spacestop);
+                    }
+                    console.log(spaceship.spacestop);
+                  }
+           }
+
+           function fuel() {
+            if(fuel === 0) {
+                fuel++;
+                console.warn('fuel: ' + fuel);
+                console.error(spaceship);
+
+            } else {
+              console.error('fuel full');
+            }
+           }
+         }
